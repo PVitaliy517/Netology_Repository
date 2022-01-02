@@ -25,8 +25,11 @@ while [[ $num1 -eq 1 ]] || [[ $num2 -eq 1 ]]; do
 	fi
 done
 
+
 echo "Введите арефметическое действие"
+
 read aref
+
 case "$aref" in 
 	"+") 	resault=$(( $n1+$n2 )) 
 		echo "$n1 + $n2 = $resault" ;;
@@ -43,10 +46,14 @@ esac
 
 echo "Продолжить работу с калькулятором - Y (Да); N (Выход)."
 read x
+
 case "$x" in
 	("N"|"n")	break ;;
 	("Y"|"y") 	continue ;;
 	*)  	echo "Вы сделали неправильный выбор. Работа с калкулятором будет завершена принудительно."
 		break ;;
 esac
+
 done
+
+
