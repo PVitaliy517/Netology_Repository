@@ -1,4 +1,5 @@
 #!/bin/bash
+
 numbercontrol  () {
 	if [[ -z "${1##[0-9]*}" ]];
 		then  echo 0
@@ -6,9 +7,11 @@ numbercontrol  () {
 	fi
 }
 
+
 while true; do
 num1=1
 num2=1
+
 while [[ $num1 -eq 1 ]] || [[ $num2 -eq 1 ]]; do
 	echo "Введите  два числа"
 	read  n1 n2
